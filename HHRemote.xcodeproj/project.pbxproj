@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		56ED0761160F687300BE6AD6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56ED0760160F687300BE6AD6 /* Default-568h@2x.png */; };
+		837D20A60E07828C00841FBD /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 837D20A40E07828C00841FBD /* EAGLView.mm */; };
+		83A3EBFA0E7145640061248C /* iPhoneInputImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83A3EBF50E7145640061248C /* iPhoneInputImpl.mm */; };
+		83A3EBFB0E7145640061248C /* iPhoneInputPackets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83A3EBF60E7145640061248C /* iPhoneInputPackets.cpp */; };
+		83A3EC060E7146120061248C /* iPhoneRemoteAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83A3EC050E7146120061248C /* iPhoneRemoteAppDelegate.mm */; };
+		83DEA7290EACE9B800D8A291 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DEA7280EACE9B800D8A291 /* Icon.png */; };
+		8634BB551236885F00B1822A /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8634BB531236885F00B1822A /* Icon-iPad.png */; };
+		8634BB561236885F00B1822A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8634BB541236885F00B1822A /* Icon@2x.png */; };
+		86BCA37E11AD16B70009ED1F /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 86BCA37D11AD16B70009ED1F /* Default-Landscape.png */; };
+		86BCA38011AD16C00009ED1F /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 86BCA37F11AD16C00009ED1F /* Default-Portrait.png */; };
+		D7EAC94D0E8158540054B513 /* SimpleEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EAC9460E8158540054B513 /* SimpleEditViewController.m */; };
+		D7EAC94E0E8158540054B513 /* BonjourBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EAC9470E8158540054B513 /* BonjourBrowser.m */; };
+		D7EAC94F0E8158540054B513 /* DomainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EAC9480E8158540054B513 /* DomainViewController.m */; };
+		D7EAC9500E8158540054B513 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EAC9490E8158540054B513 /* BrowserViewController.m */; };
+		D7EAC95B0E815BBD0054B513 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7EAC95A0E815BBD0054B513 /* Localizable.strings */; };
+		D7EAC9670E815BF40054B513 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D7EAC9660E815BF40054B513 /* Default.png */; };
+		D8780BD10E82243F006C1C8E /* UnityRemoteView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8780BCF0E82243F006C1C8E /* UnityRemoteView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Unity Remote 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity Remote 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56ED0760160F687300BE6AD6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		831D5DED0E88CE18009F4D94 /* Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setup.h; sourceTree = "<group>"; };
+		837D20A40E07828C00841FBD /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		83A3EBF20E7145640061248C /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Classes/Config.h; sourceTree = "<group>"; };
+		83A3EBF30E7145640061248C /* iPhoneRemoteInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhoneRemoteInput.h; path = Classes/iPhoneRemoteInput.h; sourceTree = "<group>"; };
+		83A3EBF40E7145640061248C /* iPhoneRemoteInputImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhoneRemoteInputImpl.h; path = Classes/iPhoneRemoteInputImpl.h; sourceTree = "<group>"; };
+		83A3EBF50E7145640061248C /* iPhoneInputImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iPhoneInputImpl.mm; path = Classes/iPhoneInputImpl.mm; sourceTree = "<group>"; };
+		83A3EBF60E7145640061248C /* iPhoneInputPackets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iPhoneInputPackets.cpp; path = Classes/iPhoneInputPackets.cpp; sourceTree = "<group>"; };
+		83A3EBF70E7145640061248C /* iPhoneRemoteInputPackets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhoneRemoteInputPackets.h; path = Classes/iPhoneRemoteInputPackets.h; sourceTree = "<group>"; };
+		83A3EBF80E7145640061248C /* iPhoneRemoteVector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhoneRemoteVector2.h; path = Classes/iPhoneRemoteVector2.h; sourceTree = "<group>"; };
+		83A3EBF90E7145640061248C /* iPhoneRemoteVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhoneRemoteVector3.h; path = Classes/iPhoneRemoteVector3.h; sourceTree = "<group>"; };
+		83A3EBFD0E7145B30061248C /* iPhoneRemote_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneRemote_Prefix.pch; sourceTree = "<group>"; };
+		83A3EC010E7145F20061248C /* iPhoneRemoteAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneRemoteAppDelegate.h; sourceTree = "<group>"; };
+		83A3EC050E7146120061248C /* iPhoneRemoteAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPhoneRemoteAppDelegate.mm; sourceTree = "<group>"; };
+		83DEA7280EACE9B800D8A291 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8634BB531236885F00B1822A /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
+		8634BB541236885F00B1822A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		86BCA37D11AD16B70009ED1F /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		86BCA37F11AD16C00009ED1F /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		86D9878511AA981400E76784 /* iPhoneRemoteMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneRemoteMessage.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EAC9450E8158540054B513 /* SimpleEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleEditViewController.h; path = Classes/BonjourSupport/SimpleEditViewController.h; sourceTree = "<group>"; };
+		D7EAC9460E8158540054B513 /* SimpleEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleEditViewController.m; path = Classes/BonjourSupport/SimpleEditViewController.m; sourceTree = "<group>"; };
+		D7EAC9470E8158540054B513 /* BonjourBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BonjourBrowser.m; path = Classes/BonjourSupport/BonjourBrowser.m; sourceTree = "<group>"; };
+		D7EAC9480E8158540054B513 /* DomainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DomainViewController.m; path = Classes/BonjourSupport/DomainViewController.m; sourceTree = "<group>"; };
+		D7EAC9490E8158540054B513 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserViewController.m; path = Classes/BonjourSupport/BrowserViewController.m; sourceTree = "<group>"; };
+		D7EAC94A0E8158540054B513 /* BonjourBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BonjourBrowser.h; path = Classes/BonjourSupport/BonjourBrowser.h; sourceTree = "<group>"; };
+		D7EAC94B0E8158540054B513 /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserViewController.h; path = Classes/BonjourSupport/BrowserViewController.h; sourceTree = "<group>"; };
+		D7EAC94C0E8158540054B513 /* DomainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DomainViewController.h; path = Classes/BonjourSupport/DomainViewController.h; sourceTree = "<group>"; };
+		D7EAC95A0E815BBD0054B513 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D7EAC9660E815BF40054B513 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D8780BCF0E82243F006C1C8E /* UnityRemoteView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UnityRemoteView.mm; path = Classes/UnityRemoteView.mm; sourceTree = SOURCE_ROOT; };
+		D8780BD00E82243F006C1C8E /* UnityRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnityRemoteView.h; path = Classes/UnityRemoteView.h; sourceTree = SOURCE_ROOT; };
+		D8F094390EA7FC27003EEA79 /* iPhoneRemoteVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhoneRemoteVersion.h; path = MessageSocket/iPhoneRemoteVersion.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
+				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				831D5DED0E88CE18009F4D94 /* Setup.h */,
+				83A3EC010E7145F20061248C /* iPhoneRemoteAppDelegate.h */,
+				83A3EC050E7146120061248C /* iPhoneRemoteAppDelegate.mm */,
+				D8780BCF0E82243F006C1C8E /* UnityRemoteView.mm */,
+				D8780BD00E82243F006C1C8E /* UnityRemoteView.h */,
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				837D20A40E07828C00841FBD /* EAGLView.mm */,
+				D8F094390EA7FC27003EEA79 /* iPhoneRemoteVersion.h */,
+				86D9878511AA981400E76784 /* iPhoneRemoteMessage.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Unity Remote 3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D7EAC93D0E8157FE0054B513 /* BonjourSupport */,
+				83A3EBFF0E7145BC0061248C /* Unity */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				83A3EBFD0E7145B30061248C /* iPhoneRemote_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56ED0760160F687300BE6AD6 /* Default-568h@2x.png */,
+				8634BB531236885F00B1822A /* Icon-iPad.png */,
+				8634BB541236885F00B1822A /* Icon@2x.png */,
+				86BCA37F11AD16C00009ED1F /* Default-Portrait.png */,
+				86BCA37D11AD16B70009ED1F /* Default-Landscape.png */,
+				83DEA7280EACE9B800D8A291 /* Icon.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				D7EAC9660E815BF40054B513 /* Default.png */,
+				D7EAC95A0E815BBD0054B513 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A3EBFF0E7145BC0061248C /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				83A3EBF20E7145640061248C /* Config.h */,
+				83A3EBF30E7145640061248C /* iPhoneRemoteInput.h */,
+				83A3EBF40E7145640061248C /* iPhoneRemoteInputImpl.h */,
+				83A3EBF50E7145640061248C /* iPhoneInputImpl.mm */,
+				83A3EBF60E7145640061248C /* iPhoneInputPackets.cpp */,
+				83A3EBF70E7145640061248C /* iPhoneRemoteInputPackets.h */,
+				83A3EBF80E7145640061248C /* iPhoneRemoteVector2.h */,
+				83A3EBF90E7145640061248C /* iPhoneRemoteVector3.h */,
+			);
+			name = Unity;
+			sourceTree = "<group>";
+		};
+		D7EAC93D0E8157FE0054B513 /* BonjourSupport */ = {
+			isa = PBXGroup;
+			children = (
+				D7EAC9450E8158540054B513 /* SimpleEditViewController.h */,
+				D7EAC9460E8158540054B513 /* SimpleEditViewController.m */,
+				D7EAC9470E8158540054B513 /* BonjourBrowser.m */,
+				D7EAC9480E8158540054B513 /* DomainViewController.m */,
+				D7EAC9490E8158540054B513 /* BrowserViewController.m */,
+				D7EAC94A0E8158540054B513 /* BonjourBrowser.h */,
+				D7EAC94B0E8158540054B513 /* BrowserViewController.h */,
+				D7EAC94C0E8158540054B513 /* DomainViewController.h */,
+			);
+			name = BonjourSupport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Unity Remote 3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Unity Remote 3" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unity Remote 3";
+			productName = iUnityRemote;
+			productReference = 1D6058910D05DD3D006BFB54 /* Unity Remote 3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HHRemote" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Unity Remote 3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EAC95B0E815BBD0054B513 /* Localizable.strings in Resources */,
+				D7EAC9670E815BF40054B513 /* Default.png in Resources */,
+				83DEA7290EACE9B800D8A291 /* Icon.png in Resources */,
+				86BCA37E11AD16B70009ED1F /* Default-Landscape.png in Resources */,
+				86BCA38011AD16C00009ED1F /* Default-Portrait.png in Resources */,
+				8634BB551236885F00B1822A /* Icon-iPad.png in Resources */,
+				8634BB561236885F00B1822A /* Icon@2x.png in Resources */,
+				56ED0761160F687300BE6AD6 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				837D20A60E07828C00841FBD /* EAGLView.mm in Sources */,
+				83A3EBFA0E7145640061248C /* iPhoneInputImpl.mm in Sources */,
+				83A3EBFB0E7145640061248C /* iPhoneInputPackets.cpp in Sources */,
+				83A3EC060E7146120061248C /* iPhoneRemoteAppDelegate.mm in Sources */,
+				D7EAC94D0E8158540054B513 /* SimpleEditViewController.m in Sources */,
+				D7EAC94E0E8158540054B513 /* BonjourBrowser.m in Sources */,
+				D7EAC94F0E8158540054B513 /* DomainViewController.m in Sources */,
+				D7EAC9500E8158540054B513 /* BrowserViewController.m in Sources */,
+				D8780BD10E82243F006C1C8E /* UnityRemoteView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Chen (K8HS66B4ZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Travis Chen (Q722EE2M9D)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhoneRemote_Prefix.pch;
+				HEADER_SEARCH_PATHS = jpglib;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "Unity Remote 3";
+				PROVISIONING_PROFILE = "5D524037-D229-4143-9D6C-F57DE40163D4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "68723F8D-667D-4171-B1C9-BBD047DA61C1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Chen (K8HS66B4ZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Travis Chen (Q722EE2M9D)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhoneRemote_Prefix.pch;
+				HEADER_SEARCH_PATHS = jpglib;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "Unity Remote 3";
+				PROVISIONING_PROFILE = "5D524037-D229-4143-9D6C-F57DE40163D4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "68723F8D-667D-4171-B1C9-BBD047DA61C1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86AB4A6B123FC37B00E26012 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = DefaultProfileUuid;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Distribution;
+		};
+		86AB4A6C123FC37B00E26012 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Chen (K8HS66B4ZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Travis Chen (Q722EE2M9D)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhoneRemote_Prefix.pch;
+				HEADER_SEARCH_PATHS = jpglib;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "Unity Remote 3";
+				PROVISIONING_PROFILE = "5D524037-D229-4143-9D6C-F57DE40163D4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "68723F8D-667D-4171-B1C9-BBD047DA61C1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = DefaultProfileUuid;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = DefaultProfileUuid;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Unity Remote 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058950D05DD3E006BFB54 /* Release */,
+				86AB4A6C123FC37B00E26012 /* Distribution */,
+				1D6058940D05DD3E006BFB54 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HHRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF5008A954540054247B /* Release */,
+				86AB4A6B123FC37B00E26012 /* Distribution */,
+				C01FCF4F08A954540054247B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

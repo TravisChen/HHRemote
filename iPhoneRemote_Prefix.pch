@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'GLRemoteTap' target in the 'GLRemoteTap' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+//#include <string>
+#include "Config.h"
