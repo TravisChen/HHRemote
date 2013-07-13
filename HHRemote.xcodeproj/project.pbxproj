@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Unity Remote 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity Remote 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* HH Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HH Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -112,7 +112,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Unity Remote 3.app */,
+				1D6058910D05DD3D006BFB54 /* HH Remote.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Unity Remote 3 */ = {
+		1D6058900D05DD3D006BFB54 /* HH Remote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Unity Remote 3" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HH Remote" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -213,9 +213,9 @@
 			);
 			dependencies = (
 			);
-			name = "Unity Remote 3";
+			name = "HH Remote";
 			productName = iUnityRemote;
-			productReference = 1D6058910D05DD3D006BFB54 /* Unity Remote 3.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* HH Remote.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Unity Remote 3 */,
+				1D6058900D05DD3D006BFB54 /* HH Remote */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 				HEADER_SEARCH_PATHS = jpglib;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PRODUCT_NAME = "Unity Remote 3";
+				PRODUCT_NAME = "HH Remote";
 				PROVISIONING_PROFILE = "5D524037-D229-4143-9D6C-F57DE40163D4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "68723F8D-667D-4171-B1C9-BBD047DA61C1";
 				SDKROOT = iphoneos;
@@ -319,7 +319,7 @@
 				HEADER_SEARCH_PATHS = jpglib;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PRODUCT_NAME = "Unity Remote 3";
+				PRODUCT_NAME = "HH Remote";
 				PROVISIONING_PROFILE = "5D524037-D229-4143-9D6C-F57DE40163D4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "68723F8D-667D-4171-B1C9-BBD047DA61C1";
 				SDKROOT = iphoneos;
@@ -356,7 +356,7 @@
 				HEADER_SEARCH_PATHS = jpglib;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PRODUCT_NAME = "Unity Remote 3";
+				PRODUCT_NAME = "HH Remote";
 				PROVISIONING_PROFILE = "5D524037-D229-4143-9D6C-F57DE40163D4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "68723F8D-667D-4171-B1C9-BBD047DA61C1";
 				SDKROOT = iphoneos;
@@ -398,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Unity Remote 3" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HH Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058950D05DD3E006BFB54 /* Release */,
