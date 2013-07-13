@@ -166,23 +166,23 @@ void NotifyDisconnectSocketFailure (const char* message);
 //        [switch1 release];
 //        [label1 release];
 //        [m_Window addSubview:m_Toolbar];
-
-        m_IPAddressAlert = [[UIAlertView alloc]
-                initWithTitle:@"Enter IP Address" message:@"<>"
-                     delegate:self cancelButtonTitle:@"Cancel"                    
-                            otherButtonTitles:@"Submit", nil];
-
-        m_IPErrorAlert = [[UIAlertView alloc]
-                initWithTitle:@"Invalid IP Address" message:@""
-                    delegate:self cancelButtonTitle:@"OK"                    
-                            otherButtonTitles:nil];
-
-        m_IPTextField = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 45.0, 260.0, 30.0)];
-        m_IPTextField.text = @"192.168.";
-        m_IPTextField.secureTextEntry = NO;
-        m_IPTextField.borderStyle = UITextBorderStyleRoundedRect;
-        m_IPTextField.font = [UIFont systemFontOfSize:22.0];
-        [m_IPAddressAlert addSubview:m_IPTextField];
+//
+//        m_IPAddressAlert = [[UIAlertView alloc]
+//                initWithTitle:@"Enter IP Address" message:@"<>"
+//                     delegate:self cancelButtonTitle:@"Cancel"                    
+//                            otherButtonTitles:@"Submit", nil];
+//
+//        m_IPErrorAlert = [[UIAlertView alloc]
+//                initWithTitle:@"Invalid IP Address" message:@""
+//                    delegate:self cancelButtonTitle:@"OK"                    
+//                            otherButtonTitles:nil];
+//
+//        m_IPTextField = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 45.0, 260.0, 30.0)];
+//        m_IPTextField.text = @"192.168.";
+//        m_IPTextField.secureTextEntry = NO;
+//        m_IPTextField.borderStyle = UITextBorderStyleRoundedRect;
+//        m_IPTextField.font = [UIFont systemFontOfSize:22.0];
+//        [m_IPAddressAlert addSubview:m_IPTextField];
     }
 
     [m_Window addSubview:[m_Browser view]];
