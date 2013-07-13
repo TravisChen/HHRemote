@@ -101,8 +101,13 @@ void NotifyDisconnectSocketFailure (const char* message);
 
         CGRect labelRect = CGRectMake(5.0f, 5.0f, screenRect.size.width - 10.0f,
             60.0f);
+
         CGRect browserRect = CGRectMake(0.0f, 70.0f, screenRect.size.width,
-            screenRect.size.height - 120.0f);
+                                        screenRect.size.height);
+        
+//        CGRect browserRect = CGRectMake(0.0f, 70.0f, screenRect.size.width,
+//                                        screenRect.size.height - 120.0f);
+        
         CGRect toolbarRect = CGRectMake(0.0f, screenRect.size.height - 50.0f,
             screenRect.size.width, 50.0f);
         CGRect connectionToolbarRect = CGRectMake(0.0f, 0.0f,
@@ -111,7 +116,7 @@ void NotifyDisconnectSocketFailure (const char* message);
         [[m_Browser view]setFrame:browserRect];
 
         m_ConnectionErrorLabel = [[UILabel alloc]initWithFrame: labelRect];
-        m_ConnectionErrorLabel.font = [UIFont boldSystemFontOfSize: 18];
+        m_ConnectionErrorLabel.font = [UIFont fontWithName:@"EstoyBueno" size:20.0f];
         m_ConnectionErrorLabel.text = title;
         m_ConnectionErrorLabel.numberOfLines = 0;
         m_ConnectionErrorLabel.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0]; 
@@ -130,8 +135,6 @@ void NotifyDisconnectSocketFailure (const char* message);
         [item1 release];
         [m_Window addSubview:m_ConnectionErrorToolbar];
 
-//        REMOVED IP TOOLBAR
-//        
 //        m_Toolbar = [UIToolbar new];
 //        m_Toolbar.barStyle = UIBarStyleDefault;
 //		    m_Toolbar.tintColor = [UIColor colorWithRed:0.3 green:0.32 blue:0.45 alpha:1.0];

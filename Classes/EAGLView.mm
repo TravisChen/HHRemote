@@ -108,23 +108,27 @@ static inline CGFloat RoundToIntPrecision(CGFloat flt)
             0.0f, 0.0f, 0.0f, 1.0f
         };
 
-        static const char text1[] = "Waiting for game view";
-        static const char text2[] = "Press 'Play'";
-
+        static const char text1[] = "PUT DEVICE IN";
+        static const char text2[] = "YOUR RIGHT POCKET";
+        static const char text3[] = "THIS WAY UP";
+        
         CGContextSetFillColor(myContext, whiteColor);
         CGContextFillRect(myContext, rect);
-        CGContextSelectFont(myContext, "Arial", 26.0f, kCGEncodingMacRoman);
+        CGContextSelectFont(myContext, "EstoyBueno", 32.0f, kCGEncodingMacRoman);
 
         CGContextSetFillColor(myContext, blackColor);
 
         CGContextSaveGState(myContext);
         CGContextTranslateCTM(myContext, 10.0f, 100.0f);
         CGContextScaleCTM(myContext, 1.0, -1.0);
-        CGContextShowTextAtPoint(myContext, 0.0f, 0.0f,
+        CGContextShowTextAtPoint(myContext, 0.0f, 10.0f,
             text1, sizeof(text1) - 1);
         CGContextTranslateCTM(myContext, 0.0f, -40.0f);
         CGContextShowTextAtPoint(myContext, 0.0f, 0.0f,
             text2, sizeof(text2) - 1);
+        CGContextTranslateCTM(myContext, 0.0f, -52.0f);
+        CGContextShowTextAtPoint(myContext, 0.0f, 0.0f,
+            text3, sizeof(text3) - 1);
         CGContextRestoreGState(myContext);
     }
 }
