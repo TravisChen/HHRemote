@@ -20,7 +20,9 @@ void NotifyDisconnectSocketFailure (const char* message);
 
 @implementation GLRemoteTapAppDelegate
 - (void)applicationDidFinishLaunching:(UIApplication *)application
-{	
+{
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+    
 	[application setStatusBarHidden:TRUE];
     m_Window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];  
     m_Window.backgroundColor = [UIColor blackColor];
