@@ -10,7 +10,7 @@
 #include <arpa/inet.h>
 
 #define kWebServiceType @"_unityiphoneremote._tcp"
-#define kInitialDomain  @"local"
+#define kInitialDomain  @"Machines"
 #define kUnityRemotePort 2574
 
 GLRemoteTapAppDelegate* gSingleton = NULL;
@@ -65,12 +65,12 @@ void NotifyDisconnectSocketFailure (const char* message);
 		m_ConnectionErrorLabel = NULL;
 	}
 
-    if (m_Toolbar)
-    {
-        [m_Toolbar removeFromSuperview];
-        [m_Toolbar release];
-        m_Toolbar = NULL;
-    }
+//    if (m_Toolbar)
+//    {
+//        [m_Toolbar removeFromSuperview];
+//        [m_Toolbar release];
+//        m_Toolbar = NULL;
+//    }
 }
 
 - (void)showImagesToggled:(UISwitch *)sender
@@ -130,40 +130,42 @@ void NotifyDisconnectSocketFailure (const char* message);
         [item1 release];
         [m_Window addSubview:m_ConnectionErrorToolbar];
 
-        m_Toolbar = [UIToolbar new];
-        m_Toolbar.barStyle = UIBarStyleDefault;
-		    m_Toolbar.tintColor = [UIColor colorWithRed:0.3 green:0.32 blue:0.45 alpha:1.0];
-        [m_Toolbar sizeToFit];
-        m_Toolbar.frame = toolbarRect;
-
-        UISwitch *switchView = [[UISwitch alloc]
-            initWithFrame:CGRectMake(0.0, 0.0, 150.0, 50.0)];
-        m_ShowImage = true;
-        [switchView setOn:YES animated:NO];
-        [switchView addTarget:self action:@selector(showImagesToggled:)
-            forControlEvents:UIControlEventValueChanged];
-
-        UIBarButtonItem *button1 = [[UIBarButtonItem alloc]
-            initWithTitle:@"Enter IP Addr."
-                    style:UIBarButtonItemStyleBordered
-                   target:self
-                   action:@selector(manualAddressEnter:)];
-        UIBarButtonItem *switch1 = [[UIBarButtonItem alloc]
-            initWithCustomView:switchView];
-        UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0,
-            85.0, 56.0)];
-        textLabel.text = @"Show image:";
-        textLabel.font = [UIFont boldSystemFontOfSize: 13];
-        textLabel.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
-        textLabel.textColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
-        UIBarButtonItem *label1 = [[UIBarButtonItem alloc]
-            initWithCustomView:textLabel];
-        NSArray *items = [NSArray arrayWithObjects: button1, label1, switch1, nil];
-        [m_Toolbar setItems:items animated:NO];
-        [button1 release];
-        [switch1 release];
-        [label1 release];
-        [m_Window addSubview:m_Toolbar];
+//        REMOVED IP TOOLBAR
+//        
+//        m_Toolbar = [UIToolbar new];
+//        m_Toolbar.barStyle = UIBarStyleDefault;
+//		    m_Toolbar.tintColor = [UIColor colorWithRed:0.3 green:0.32 blue:0.45 alpha:1.0];
+//        [m_Toolbar sizeToFit];
+//        m_Toolbar.frame = toolbarRect;
+//
+//        UISwitch *switchView = [[UISwitch alloc]
+//            initWithFrame:CGRectMake(0.0, 0.0, 150.0, 50.0)];
+//        m_ShowImage = true;
+//        [switchView setOn:YES animated:NO];
+//        [switchView addTarget:self action:@selector(showImagesToggled:)
+//            forControlEvents:UIControlEventValueChanged];
+//
+//        UIBarButtonItem *button1 = [[UIBarButtonItem alloc]
+//            initWithTitle:@"Enter IP Addr."
+//                    style:UIBarButtonItemStyleBordered
+//                   target:self
+//                   action:@selector(manualAddressEnter:)];
+//        UIBarButtonItem *switch1 = [[UIBarButtonItem alloc]
+//            initWithCustomView:switchView];
+//        UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0,
+//            85.0, 56.0)];
+//        textLabel.text = @"Show image:";
+//        textLabel.font = [UIFont boldSystemFontOfSize: 13];
+//        textLabel.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
+//        textLabel.textColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+//        UIBarButtonItem *label1 = [[UIBarButtonItem alloc]
+//            initWithCustomView:textLabel];
+//        NSArray *items = [NSArray arrayWithObjects: button1, label1, switch1, nil];
+//        [m_Toolbar setItems:items animated:NO];
+//        [button1 release];
+//        [switch1 release];
+//        [label1 release];
+//        [m_Window addSubview:m_Toolbar];
 
         m_IPAddressAlert = [[UIAlertView alloc]
                 initWithTitle:@"Enter IP Address" message:@"<>"
